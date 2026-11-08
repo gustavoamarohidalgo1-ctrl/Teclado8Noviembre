@@ -1,0 +1,32 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'pe.gustavo.tecladolibre'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'pe.gustavo.tecladolibre'
+        minSdk 26
+        targetSdk 35
+        versionCode 5
+        versionName '1.4'
+        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    lint { abortOnError true }
+}
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    androidTestCompileOnly files("${android.sdkDirectory}/platforms/android-35/optional/android.test.runner.jar")
+    androidTestCompileOnly files("${android.sdkDirectory}/platforms/android-35/optional/android.test.base.jar")
+    androidTestCompileOnly files("${android.sdkDirectory}/platforms/android-35/optional/android.test.mock.jar")
+}

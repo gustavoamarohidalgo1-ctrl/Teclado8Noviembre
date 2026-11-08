@@ -1,0 +1,16 @@
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+*.jks
+*.keystore
+*.password
+.DS_Store
+capturas/
+entregables/anteriores/
+entregables/*.png
+*.idsig
+password
+.env
+.env.*

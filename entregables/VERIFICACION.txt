@@ -1,0 +1,31 @@
+Teclado Libre 1.4 — verificación, 8 de noviembre de 2026
+
+Instalado como actualización en Xiaomi 24117RN76L con Android 16.
+Versión instalada comprobada: versionCode=5, versionName=1.4.
+Eliminadas MainActivity, la pantalla de activación/prueba, su enlace de ajustes,
+el filtro MAIN/LAUNCHER y los recursos exclusivos de esa pantalla.
+La consulta al gestor de paquetes no encuentra actividades de lanzador.
+El APK no declara ninguna actividad. Conserva el servicio IME, nombre de
+componente, applicationId y firma, y sigue habilitado y seleccionado tras actualizar.
+
+Prueba real posterior a la instalación: teclado visible en la búsqueda de Ajustes;
+se escribió «wifi» pulsando las teclas reales y después se borró la consulta.
+No se enviaron mensajes ni se modificaron ajustes de navegación o Gboard.
+Altura de texto vertical: 238 dp (669 píxeles en el Xiaomi).
+Tema negro/gris, sin sonido ni vibración, captionBar oculta en Android 16.
+
+Compilación release, 2 pruebas unitarias y lint: sin errores.
+Lint conserva 2 avisos por resolver identificadores internos del sistema.
+Firma del APK comprobada: esquemas v2 y v3.
+Las 7 pruebas instrumentadas se ejecutaron en 1.1; no se repitieron para esta
+retirada de la pantalla de configuración. No dependen de MainActivity.
+Diseño vertical/horizontal comprobado en emulador API 35 en versiones anteriores;
+esta versión se comprobó directamente en el Xiaomi en vertical.
+Android mínimo configurado: 8.0 (API 26); API 26–34 no probadas.
+Sin bibliotecas externas de producción, permisos solicitados, analítica,
+almacenamiento del texto ni nuevas tareas permanentes en segundo plano.
+Android administra el ciclo de vida del servicio de teclado.
+
+Tamaño exacto: 25335 bytes.
+Reducción respecto a 1.3: 4096 bytes.
+SHA-256: 90b6e94eaabdc22b3c2978c014397d272e453d89b86ab1c6d170ec6b62accbbd
